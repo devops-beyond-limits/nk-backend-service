@@ -14,7 +14,7 @@
 				{
 					"name": "Get All Persons",
 					"request": {
-						"url": "http://{{BACKEND_HOST}}:{{BACKEND_PORT}}/backend/persons",
+						"url": "http://{{BACKEND_HOST}}:{{BACKEND_PORT}}/persons",
 						"method": "GET",
 						"header": [],
 						"body": {
@@ -42,7 +42,7 @@
 				{
 					"name": "Delete Person",
 					"request": {
-						"url": "http://{{BACKEND_HOST}}:{{BACKEND_PORT}}/backend/person/840110",
+						"url": "http://{{BACKEND_HOST}}:{{BACKEND_PORT}}/person/840110",
 						"method": "DELETE",
 						"header": [
 							{
