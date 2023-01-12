@@ -1,0 +1,59 @@
+{
+	"variables": [],
+	"info": {
+		"name": "nk-backend-service",
+		"_postman_id": "c017fb69-052d-14fa-a20d-e32db77d7c27",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "person",
+			"description": "",
+			"item": [
+				{
+					"name": "Get All Persons",
+					"request": {
+						"url": "http://{{BACKEND_HOST}}:{{BACKEND_PORT}}/persons",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Create Person",
+					"request": {
+						"url": "http://{{BACKEND_HOST}}:{{BACKEND_PORT}}/person",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"firstName\": \"Jhon\",\n\t\"lastName\": \"Doe\",\n\t\"age\": 29,\n\t\"isAdmin\": false,\n\t\"email\": \"jhondoe@gmail.com\",\n\t\"password\": \"somepassword\",\n\t\"dob\": \"1982-03-06\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Person",
+					"request": {
+						"url": "http://{{BACKEND_HOST}}:{{BACKEND_PORT}}/person/<ARANGO KEY>",
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
