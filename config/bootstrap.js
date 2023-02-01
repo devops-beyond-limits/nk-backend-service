@@ -12,7 +12,7 @@
 module.exports.bootstrap = async (cb) => {
 	const FILE_PATH = __filename.split('config')[1];
 	const ARANGO_CLIENT = require('arangojs');
-	
+	console.log("AWS DEMO CHANGE");
 	if(process.env.DEPLOYMENT_MODE === "dockerCompose") {
 		sails.log.info(`${FILE_PATH}: Starting the service using Docker Compose. Initializing the service in 20 seconds`);
 		const timeout = require("await-timeout");
