@@ -25,6 +25,7 @@ module.exports.bootstrap = async (cb) => {
     });
 
 	try {
+    sails.log.info('AWS DEMO CICD');
 		sails.log.info(`${FILE_PATH}: Attempting to initialize the required database and collection`);
 		sails.log.info(`${FILE_PATH}: fetching the available databases`);
 		// List all the databases available
