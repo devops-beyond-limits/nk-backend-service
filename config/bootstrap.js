@@ -19,7 +19,7 @@ module.exports.bootstrap = async (cb) => {
 		sails.log.info(`${FILE_PATH}: Timeout done. Initializing the service`);
 	}
 	
-      
+    console.log("AWS DEMO - CHANGE")  
     const db = new ARANGO_CLIENT.Database({
         url: `http://${process.env.ARANGODB_USERNAME}:${process.env.ARANGODB_PASSWORD}@${process.env.ARANGODB_HOST}:${process.env.ARANGODB_PORT}/`,
     });
